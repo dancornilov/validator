@@ -1,0 +1,32 @@
+<div class="content container">
+  <form [formGroup]="form">
+    <div class="field">
+      <label> {{ 'fields.name' | translate }}</label>
+      <input type="text" formControlName="name" />
+
+      <app-validator [control]="form.get('name')"></app-validator>
+    </div>
+
+
+    <div class="field">
+      <label> {{ 'fields.age' | translate }}</label>
+      <input type="text" formControlName="age" />
+
+      <app-validator [customValidation]="ageValidation" [control]="form.get('age')"></app-validator>
+    </div>
+
+    <div class="field">
+      <label> {{ 'fields.street_name' | translate }}</label>
+      <input type="text" formControlName="street_name" />
+
+      <app-validator [control]="form.get('street_name')"></app-validator>
+    </div>
+
+    <div class="field">
+      <label> {{ 'fields.name' | translate }}</label>
+      <input type="text" formControlName="project_manager_name" />
+
+      <app-validator [customName]="'name'" [control]="form.get('project_manager_name')"></app-validator>
+    </div>
+  </form>
+</div>

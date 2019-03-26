@@ -1,0 +1,19 @@
+{
+  "validators": {
+    "required": "{{field}} is required!",
+    "email": "E-mail is not valid!",
+    "minlength": "{{field}} should have minimum {{length}} characters!",
+    "maxlength": "{{field}} should have maximum {{length}} characters!",
+    "min": "{{field}} minimum values is {{value}}!",
+    "max": "{{field}} maximum values is {{value}}!",
+    "pattern": "{{field}} have incorrect format!",
+    "age-validation": "You should have minimum 18 years!"
+  },
+  "fields": {
+    "id": "ID",
+    "name": "Name",
+    "type": "Type",
+    "age": "Age",
+    "street_name": "Street name"
+  }
+}

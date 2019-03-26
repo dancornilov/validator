@@ -1,0 +1,14 @@
+div.validator {
+  visibility: hidden;
+  margin-top: 5px;
+  min-height: 20px;
+
+  &.show {
+    visibility: visible;
+  }
+
+  p {
+    color: #8b0000;
+    font-size: 12px;
+  }
+}
